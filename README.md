@@ -61,6 +61,8 @@
 <div markdown="1">
   
 ## 데이터베이스 설계
+![Giwoot-jang-ERD](https://github.com/user-attachments/assets/39e98847-d852-4a44-9d65-f06c8ff50628)
+
 
 ## 시퀀스 다이어그램
 
