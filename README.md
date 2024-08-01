@@ -24,13 +24,34 @@
 [Link](https://github.com/2024-Giwoot-jang/back-end/wiki/%EC%9C%A0%EC%A6%88%EC%BC%80%EC%9D%B4%EC%8A%A4-%EC%9E%91%EC%84%B1)
 
 ## 와이어프레임
+<details>
+<summary>열기/닫기</summary>
+<div markdown="1">       
+  
 ![Components (2)](https://github.com/user-attachments/assets/b3a69d74-519f-4bda-b59c-c3f0409f9717)
 
+</div>
+</details>
+
 ## 목업
+<details>
+<summary>열기/닫기</summary>
+<div markdown="1">       
+  
 ![Components (1)](https://github.com/user-attachments/assets/42f164af-1f2f-454c-8416-52096fffd7b3)
 
+</div>
+</details>
+
 ## ERD
+<details>
+<summary>열기/닫기</summary>
+<div markdown="1">       
+  
 ![Giwoot-jang-ERD (2)](https://github.com/user-attachments/assets/91caf398-c2fb-464f-83ab-916d367d7e4d)
+
+</div>
+</details>
 
 ## 시퀀스 다이어그램
 
