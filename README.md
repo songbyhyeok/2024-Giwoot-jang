@@ -21,6 +21,7 @@
 * AWS
 
 ## 유스케이스
+[Link](https://github.com/2024-Giwoot-jang/back-end/wiki#%EC%9C%A0%EC%8A%A4%EC%BC%80%EC%9D%B4%EC%8A%A4)
 
 ## 와이어프레임
 ![Components (2)](https://github.com/user-attachments/assets/b3a69d74-519f-4bda-b59c-c3f0409f9717)
