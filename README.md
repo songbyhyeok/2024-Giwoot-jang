@@ -28,7 +28,7 @@
 <summary>열기/닫기</summary>
 <div markdown="1">       
   
-![Components (2)](https://github.com/user-attachments/assets/b3a69d74-519f-4bda-b59c-c3f0409f9717)
+![wireframe](https://github.com/user-attachments/assets/b8dd4065-dea4-411a-95a1-09689f4f5185)
 
 </div>
 </details>
@@ -38,7 +38,7 @@
 <summary>열기/닫기</summary>
 <div markdown="1">       
   
-![Components (1)](https://github.com/user-attachments/assets/42f164af-1f2f-454c-8416-52096fffd7b3)
+![mockup](https://github.com/user-attachments/assets/4edaf5da-d402-4771-88a0-25b4ca874fad)
 
 </div>
 </details>
@@ -48,7 +48,7 @@
 <summary>열기/닫기</summary>
 <div markdown="1">       
   
-![Giwoot-jang-ERD](https://github.com/user-attachments/assets/157354f1-0cc9-4219-99fd-bfd931c0684a)
+![Giwoot-jang-ERD](https://github.com/user-attachments/assets/48b701a2-cd2e-4f43-a77f-75a3e3b5491a)
 
 </div>
 </details>
