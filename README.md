@@ -48,7 +48,7 @@
 <summary>열기/닫기</summary>
 <div markdown="1">       
   
-![Giwoot-jang-ERD (2)](https://github.com/user-attachments/assets/91caf398-c2fb-464f-83ab-916d367d7e4d)
+![Giwoot-jang-ERD](https://github.com/user-attachments/assets/157354f1-0cc9-4219-99fd-bfd931c0684a)
 
 </div>
 </details>
