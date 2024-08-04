@@ -1,7 +1,7 @@
 ## 기웃장
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/86606dad-a284-414d-bad9-6aef2bff7e19">
+  <img src="https://github.com/user-attachments/assets/0da2961f-e02f-478c-a653-a890558c12dd">
 </p>
 
 <div align="center">
@@ -44,7 +44,7 @@
 <summary>열기/닫기</summary>
 <div markdown="1">       
   
-![wireframe](https://github.com/user-attachments/assets/b8dd4065-dea4-411a-95a1-09689f4f5185)
+![wireframe](https://github.com/user-attachments/assets/89e60647-e44f-4279-b329-b759c0907dc1)
 
 </div>
 </details>
@@ -53,8 +53,8 @@
 <details>
 <summary>열기/닫기</summary>
 <div markdown="1">       
-  
-![mockup](https://github.com/user-attachments/assets/4edaf5da-d402-4771-88a0-25b4ca874fad)
+
+![mockups](https://github.com/user-attachments/assets/496f240e-0eb6-4447-94f0-053e327b188b)
 
 </div>
 </details>
@@ -64,15 +64,40 @@
 <summary>열기/닫기</summary>
 <div markdown="1">       
   
-![Giwoot-jang-ERD](https://github.com/user-attachments/assets/48b701a2-cd2e-4f43-a77f-75a3e3b5491a)
+![Giwoot-jang-ERD](https://github.com/user-attachments/assets/e631f10a-e610-4cd3-b885-5e6f7dcd8d5f)
 
 </div>
 </details>
 
 ## 시퀀스 다이어그램
+<details>
+<summary>열기/닫기</summary>
+<div markdown="1">       
+
+
+
+</div>
+</details>
 
 ## 아키텍처
+<details>
+<summary>열기/닫기</summary>
+<div markdown="1">       
+
+
+
+</div>
+</details>
 
 ## API 문서
+<details>
+<summary>열기/닫기</summary>
+<div markdown="1">       
+
+
+
+</div>
+</details>
 
 ## 기술적 이슈 및 해결과정
+[Link]()
