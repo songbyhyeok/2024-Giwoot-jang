@@ -34,10 +34,10 @@
 * AWS
 
 ## 유스케이스
-[Link](https://github.com/songbyhyeok/2024-giwoot-jang/wiki/%EC%9C%A0%EC%A6%88%EC%BC%80%EC%9D%B4%EC%8A%A4)
+[link](https://github.com/songbyhyeok/2024-giwoot-jang/wiki/%EC%9C%A0%EC%A6%88%EC%BC%80%EC%9D%B4%EC%8A%A4)
 
 ## 컨벤션
-[Link](https://github.com/songbyhyeok/2024-giwoot-jang/wiki/%EC%BB%A8%EB%B2%A4%EC%85%98)
+[link](https://github.com/songbyhyeok/2024-giwoot-jang/wiki/%EC%BB%A8%EB%B2%A4%EC%85%98)
 
 ## 와이어프레임
 <details>
@@ -100,4 +100,4 @@
 </details>
 
 ## 기술적 이슈 및 해결과정
-[Link]()
+[link]()
