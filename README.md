@@ -1,7 +1,7 @@
 ## 기웃장
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0da2961f-e02f-478c-a653-a890558c12dd">
+  <img src="https://github.com/user-attachments/assets/0da2961f-e02f-478c-a653-a890558c12dd" width="70%">
 </p>
 
 <div align="center">
