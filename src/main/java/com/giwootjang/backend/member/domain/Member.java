@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "members")
 public class Member {
+
     @Id
     @Column(name = "member_id", length = 20, nullable = false)
     private String memberId;
@@ -31,8 +32,14 @@ public class Member {
     private Status status;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "type", nullable = false)
-    private MemberType type;
+    @Column(name = "login_type", nullable = false)
+    private LoginType loginType;
+
+    @Column(name = "amount", precision = 10, scale = 2, nullable = false)
+    private BigDecimal amount;
+
+    @Column(name = "points", precision = 10, scale = 2)
+    private BigDecimal points;
 
     @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
@@ -40,19 +47,16 @@ public class Member {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
-    @Column(name = "points", precision = 10, scale = 2)
-    private BigDecimal points;
-
-    public Member() {
-        // 기본 생성자
+    // Enum for status
+    public enum Status {
+        ACTIVE, SLEEP, ADVERTISER
     }
-}
 
-enum Status {
-    ACTIVE, SLEEP, QUIT
-}
+    // Enum for login type
+    public enum LoginType {
+        DEFAULT, OAUTH
+    }
 
-enum MemberType {
-    DEFAULT, OAUTH
+    // Getters and Setters omitted for brevity
 }
 
