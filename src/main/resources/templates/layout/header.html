@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-<div class="container-fluid border-bottom">
-    <div class="container-xxl">
-        <div class="row">
-            <div class="col-xxl-4">
-                giwoot-jang
+<div class="container-xxl">
+    <div class="row mt-1 text-muted fw-bold">
+
+        <div class="col-xxl-4">
+            <p class="fs-5">giwoot-jang</p>
+        </div>
+
+        <div class="col-xxl-3 offset-1">
+            <div class="input-group input-group-sm d-flex">
+                <input class="form-control border-secondary" type="search" placeholder="진행중인 경매 검색" aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mb-1" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
             </div>
-            <div class="col-xxl-4">
-                경매 검색
-            </div>
-            <div class="col-xxl-2">
-                경매 등록
-            </div>
-            <div class="col-xxl">
-                로그인
-            </div>
+        </div>
+
+        <div class="col-xxl-1 offset-2">
+            <button type="button" class="btn btn-outline-dark btn-sm">경매 등록</button>
+        </div>
+        <div class="col-xxl ms-3">
+            <button type="button" class="btn btn-outline-dark btn-sm">로그인</button>
         </div>
     </div>
 </div>

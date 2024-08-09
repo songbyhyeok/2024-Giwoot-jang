@@ -3,7 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .text-truncate {
+            width: 100px; /* 원하는 너비 설정 */
+            white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 설정 */
+            overflow: hidden; /* 넘치는 텍스트를 숨김 */
+            text-overflow: ellipsis; /* 넘치는 부분을 말줄임표(...)로 표시 */
+        }
+        .line-clamp-banner {
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* 두 줄까지 허용 */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis; /* 넘치는 부분을 말줄임표로 표시 */
+            width: 300px; /* 적절한 너비 설정 */
+        }
+        .line-clamp-streaming {
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* 두 줄까지 허용 */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis; /* 넘치는 부분을 말줄임표로 표시 */
+            width: 190px; /* 적절한 너비 설정 */
+        }
+    </style>
 </head>
+
 <body>
 <div class="container-xxl">
     <!--배너 컴포넌트-->
@@ -11,133 +37,261 @@
         <div class="row" style="height: 275px;">
             <div class="col-xxl">
                 <div class="border" style="height: 235px;">
-
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover">
                 </div>
-                <p>
+
+                <p class="line-clamp-banner">
                     포스트 그래놀라 크랜베리 아몬드 시리얼
                     570g, 10개 10% SALE
                 </p>
             </div>
             <div class="col-xxl">
                 <div class="border" style="height: 235px;">
-
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover">
                 </div>
-                <p>
+                <p class="line-clamp-banner">
                     다이소 본셉 워터 베일 틴트 핑크워터
                     Best 4.6점(135)
                 </p>
             </div>
             <div class="col-xxl">
                 <div class="border" style="height: 235px;">
-
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover">
                 </div>
-                <p>
+                <p class="line-clamp-banner">
                     빙그레 바나나맛 우유
                     판매 제시가 830원
                 </p>
             </div>
             <div class="col-xxl">
                 <div class="border" style="height: 235px;">
-
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover">
                 </div>
-                <p>
+                <p class="line-clamp-banner">
                     메가박스 [온/오프]영화관람권 (평일/주말)
                     40% 15000 -> 9000원
                 </p>
             </div>
         </div>
+
+    <!--        배너 제어창-->
+        <div class="row mt-1 offset-10 align-items-center">
+            <div class="col-3 offset-3">
+                <p class="fs-5 mb-0" style="width: 95px">
+                    &lt; 10/10 &gt;
+                </p>
+            </div>
+            <div class="col-1 d-flex justify-content-center ms-5 mt-1">
+                <button class="btn p-0" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+                        <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-1 d-flex justify-content-center mt-1">
+                <button class="btn p-0" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+
     </div>
 
     <!--경매 스트리밍 컴포넌트-->
-    <div class="row" style="height: 600px;">
-        <p style="height: 50px;"> 지금 경매에 참여해 보세요</p>
+    <div class="container-xxl mt-2 overflow-hidden" style="height: 680px;">
+        <p class="text-dark mb-1 fs-4"> 지금 경매에 참여해 보세요</p>
 
-        <div class="row mb-4" style="height: 250px;">
-            <div class="col-xxl border">
-                <div class="border" style="height: 235px;">
-
+        <div class="row my-2" style="height: 300px;">
+            <div class="p-0 ms-2 col border overflow-hidden">
+                <div class="position-relative" style="height: 75%">
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0">
+                        <span class="bg-danger text-white px-2 ms-2 mt-1 py-0" style="font-size: 0.75rem;">LIVE</span>
+                        <span class="bg-dark text-white px-2 mt-1 ms-2 py-0" style="font-size: 0.75rem;">10,000명 시청</span>
+                    </div>
                 </div>
-                <div class="">
-                    A
+                <div class="d-flex align-items-center">
+                    <div class="mx-2 mb-2">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center flex-grow-1">
+                        <p class="line-clamp-streaming text-muted fw-bold mb-0">[V] 뉴(?)비, 솔레 몇퍼까지 가능할까요 ˶•⩊•˶ !굿즈</p>
+                        <p class="text-truncate text-muted mb-0">songbyhyeok</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-xxl border">
-                <div class="border" style="height: 235px;">
-
+            <div class="p-0 ms-2 col border overflow-hidden">
+                <div class="position-relative" style="height: 75%">
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0">
+                        <span class="bg-danger text-white px-2 ms-2 mt-1 py-0" style="font-size: 0.75rem;">LIVE</span>
+                        <span class="bg-dark text-white px-2 mt-1 ms-2 py-0" style="font-size: 0.75rem;">10,000명 시청</span>
+                    </div>
                 </div>
-                <div class="">
-                    A
-                </div>
-            </div>
-            <div class="col-xxl border">
-                <div class="border" style="height: 235px;">
-
-                </div>
-                <div class="">
-                    A
-                </div>
-            </div>
-            <div class="col-xxl border">
-                <div class="border" style="height: 235px;">
-
-                </div>
-                <div class="">
-                    A
+                <div class="d-flex align-items-center">
+                    <div class="mx-2 mb-2">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center flex-grow-1">
+                        <p class="line-clamp-streaming text-muted fw-bold mb-0">올스타 / HLE vs BRO - DK vs FOX #LCK KWatchParty</p>
+                        <p class="text-truncate text-muted mb-0">songbyhyeok</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-xxl border">
-                <div class="border" style="height: 235px;">
-
+            <div class="p-0 ms-2 col border overflow-hidden">
+                <div class="position-relative" style="height: 75%">
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0">
+                        <span class="bg-danger text-white px-2 ms-2 mt-1 py-0" style="font-size: 0.75rem;">LIVE</span>
+                        <span class="bg-dark text-white px-2 mt-1 ms-2 py-0" style="font-size: 0.75rem;">10,000명 시청</span>
+                    </div>
                 </div>
-                <div class="">
-                    A
+                <div class="d-flex align-items-center">
+                    <div class="mx-2 mb-2">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center flex-grow-1">
+                        <p class="line-clamp-streaming text-muted fw-bold mb-0">올스타 / HLE vs BRO - DK vs FOX #LCK KWatchParty</p>
+                        <p class="text-truncate text-muted mb-0">songbyhyeok</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-0 ms-2 col border overflow-hidden">
+                <div class="position-relative" style="height: 75%">
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0">
+                        <span class="bg-danger text-white px-2 ms-2 mt-1 py-0" style="font-size: 0.75rem;">LIVE</span>
+                        <span class="bg-dark text-white px-2 mt-1 ms-2 py-0" style="font-size: 0.75rem;">10,000명 시청</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="mx-2 mb-2">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center flex-grow-1">
+                        <p class="line-clamp-streaming text-muted fw-bold mb-0">올스타 / HLE vs BRO - DK vs FOX #LCK KWatchParty</p>
+                        <p class="text-truncate text-muted mb-0">songbyhyeok</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-0 ms-2 col border overflow-hidden">
+                <div class="position-relative" style="height: 75%">
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0">
+                        <span class="bg-danger text-white px-2 ms-2 mt-1 py-0" style="font-size: 0.75rem;">LIVE</span>
+                        <span class="bg-dark text-white px-2 mt-1 ms-2 py-0" style="font-size: 0.75rem;">10,000명 시청</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="mx-2 mb-2">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center flex-grow-1">
+                        <p class="line-clamp-streaming text-muted fw-bold mb-0">올스타 / HLE vs BRO - DK vs FOX #LCK KWatchParty</p>
+                        <p class="text-truncate text-muted mb-0">songbyhyeok</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row" style="height: 250px;">
-            <div class="col-xxl border">
-                <div class="border" style="height: 235px;">
-
+        <div class="row my-2" style="height: 300px;">
+            <div class="p-0 ms-2 col border overflow-hidden">
+                <div class="position-relative" style="height: 75%">
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0">
+                        <span class="bg-danger text-white px-2 ms-2 mt-1 py-0" style="font-size: 0.75rem;">LIVE</span>
+                        <span class="bg-dark text-white px-2 mt-1 ms-2 py-0" style="font-size: 0.75rem;">10,000명 시청</span>
+                    </div>
                 </div>
-                <div class="">
-                    A
-                </div>
-            </div>
-            <div class="col-xxl border">
-                <div class="border" style="height: 235px;">
-
-                </div>
-                <div class="">
-                    A
-                </div>
-            </div>
-            <div class="col-xxl border">
-                <div class="border" style="height: 235px;">
-
-                </div>
-                <div class="">
-                    A
+                <div class="d-flex align-items-center">
+                    <div class="mx-2 mb-2">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center flex-grow-1">
+                        <p class="line-clamp-streaming text-muted fw-bold mb-0">[V] 뉴(?)비, 솔레 몇퍼까지 가능할까요 ˶•⩊•˶ !굿즈</p>
+                        <p class="text-truncate text-muted mb-0">songbyhyeok</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-xxl border">
-                <div class="border" style="height: 235px;">
-
+            <div class="p-0 ms-2 col border overflow-hidden">
+                <div class="position-relative" style="height: 75%">
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0">
+                        <span class="bg-danger text-white px-2 ms-2 mt-1 py-0" style="font-size: 0.75rem;">LIVE</span>
+                        <span class="bg-dark text-white px-2 mt-1 ms-2 py-0" style="font-size: 0.75rem;">10,000명 시청</span>
+                    </div>
                 </div>
-                <div class="">
-                    A
+                <div class="d-flex align-items-center">
+                    <div class="mx-2 mb-2">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center flex-grow-1">
+                        <p class="line-clamp-streaming text-muted fw-bold mb-0">올스타 / HLE vs BRO - DK vs FOX #LCK KWatchParty</p>
+                        <p class="text-truncate text-muted mb-0">songbyhyeok</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-xxl">
-                <div class="border" style="height: 235px;">
-
+            <div class="p-0 ms-2 col border overflow-hidden">
+                <div class="position-relative" style="height: 75%">
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0">
+                        <span class="bg-danger text-white px-2 ms-2 mt-1 py-0" style="font-size: 0.75rem;">LIVE</span>
+                        <span class="bg-dark text-white px-2 mt-1 ms-2 py-0" style="font-size: 0.75rem;">10,000명 시청</span>
+                    </div>
                 </div>
-                <div class="border">
-                    A
+                <div class="d-flex align-items-center">
+                    <div class="mx-2 mb-2">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center flex-grow-1">
+                        <p class="line-clamp-streaming text-muted fw-bold mb-0">올스타 / HLE vs BRO - DK vs FOX #LCK KWatchParty</p>
+                        <p class="text-truncate text-muted mb-0">songbyhyeok</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-0 ms-2 col border overflow-hidden">
+                <div class="position-relative" style="height: 75%">
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0">
+                        <span class="bg-danger text-white px-2 ms-2 mt-1 py-0" style="font-size: 0.75rem;">LIVE</span>
+                        <span class="bg-dark text-white px-2 mt-1 ms-2 py-0" style="font-size: 0.75rem;">10,000명 시청</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="mx-2 mb-2">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center flex-grow-1">
+                        <p class="line-clamp-streaming text-muted fw-bold mb-0">올스타 / HLE vs BRO - DK vs FOX #LCK KWatchParty</p>
+                        <p class="text-truncate text-muted mb-0">songbyhyeok</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-0 ms-2 col border overflow-hidden">
+                <div class="position-relative" style="height: 75%">
+                    <img src="https://github.com/user-attachments/assets/fb12c910-8ed3-4d8a-8954-8ee4713c6d2b" alt="Profile Picture" class="w-100 h-100 object-fit-cover opacity-75">
+                    <div class="position-absolute top-0 start-0">
+                        <span class="bg-danger text-white px-2 ms-2 mt-1 py-0" style="font-size: 0.75rem;">LIVE</span>
+                        <span class="bg-dark text-white px-2 mt-1 ms-2 py-0" style="font-size: 0.75rem;">10,000명 시청</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="mx-2 mb-2">
+                        <img src="https://via.placeholder.com/40x40" alt="Profile Picture" class="rounded-circle" style="width: 40px; height: 40px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center flex-grow-1">
+                        <p class="line-clamp-streaming text-muted fw-bold mb-0">올스타 / HLE vs BRO - DK vs FOX #LCK KWatchParty</p>
+                        <p class="text-truncate text-muted mb-0">songbyhyeok</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 </body>
 </html>
