@@ -5,12 +5,13 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "role")
+@Table(name = "roles")
 public class Role {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "role_no", nullable = false)
-    private long roleNo;
+    private Long roleNo;
 
     @ManyToOne
     @JoinColumn(name = "member_id", nullable = false)
@@ -20,17 +21,19 @@ public class Role {
     @Column(name = "name", nullable = false)
     private RoleName name;
 
+    @Column(name = "permissions", nullable = false)
+    private int permissions;
+
     @Column(name = "granted_at", nullable = false)
     private LocalDateTime grantedAt;
 
     @Column(name = "revoked_at")
     private LocalDateTime revokedAt;
 
-    public Role() {
-        // 기본 생성자
+    // Enum for role names
+    public enum RoleName {
+        ADMIN, AUCTIONEER, ADVERTISER
     }
-}
 
-enum RoleName {
-    ADMIN, AUCTIONEER, ADVERTISER
+    // Getters and Setters omitted for brevity
 }

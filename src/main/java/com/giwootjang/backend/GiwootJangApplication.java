@@ -8,8 +8,6 @@ public class GiwootJangApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GiwootJangApplication.class, args);
-
-		System.out.println("기웃장");
 	}
 
 }
